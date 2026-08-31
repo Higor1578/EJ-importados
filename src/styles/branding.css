@@ -139,6 +139,9 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 
 .footer p{overflow-wrap:anywhere}.footer p svg{flex:0 0 auto}
 
+/* Minha Conta fica oculta enquanto as vendas são finalizadas pelo WhatsApp */
+.header-actions>a:first-child{display:none}
+
 /* Atalho de Início compacto no celular */
 @media(max-width:800px){.mobile-home{display:block!important;min-width:42px;text-align:center}.nav .container{gap:21px}}
 
