@@ -138,3 +138,6 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){.access-hero::before,.beauty-hero::before,.sale-hero::before,.access-hero .container span,.access-hero .container h1,.access-hero .container p,.beauty-hero .container span,.beauty-hero .container h1,.beauty-hero .container p,.sale-hero .container span,.sale-hero .container h1,.sale-hero .container p{animation:none;opacity:1;transform:none;filter:none}}
 
 .footer p{overflow-wrap:anywhere}.footer p svg{flex:0 0 auto}
+
+/* No celular, a própria logo funciona como botão de Início */
+@media(max-width:800px){.mobile-home{display:none!important}}
