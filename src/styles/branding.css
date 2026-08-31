@@ -141,3 +141,5 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 
 /* Atalho de Início compacto no celular */
 @media(max-width:800px){.mobile-home{display:block!important;min-width:42px;text-align:center}.nav .container{gap:21px}}
+
+@media(max-width:800px){.nav .sale{display:none}}
