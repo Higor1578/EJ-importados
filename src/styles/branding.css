@@ -139,5 +139,5 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 
 .footer p{overflow-wrap:anywhere}.footer p svg{flex:0 0 auto}
 
-/* No celular, a própria logo funciona como botão de Início */
-@media(max-width:800px){.mobile-home{display:none!important}}
+/* Atalho de Início compacto no celular */
+@media(max-width:800px){.mobile-home{display:block!important;min-width:42px;text-align:center}.nav .container{gap:21px}}
