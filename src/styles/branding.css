@@ -143,3 +143,6 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 @media(max-width:800px){.mobile-home{display:block!important;min-width:42px;text-align:center}.nav .container{gap:21px}}
 
 @media(max-width:800px){.nav .sale{display:none}}
+
+/* Mantém o monograma EJ inteiro visível no rodapé do celular */
+@media(max-width:800px){.footer{background-size:100% 100%,100% auto;background-position:center,center bottom;background-repeat:no-repeat}}
