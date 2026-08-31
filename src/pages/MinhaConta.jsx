@@ -1,0 +1,1 @@
+import'../styles/carrinho.css';export default function MinhaConta(){return <main className="container account-page"><h1>Minha conta</h1><div className="account-grid">{['Meus dados','Endereços','Meus pedidos','Favoritos','Alterar senha','Sair'].map(x=><button key={x}>{x}<span>→</span></button>)}</div></main>}

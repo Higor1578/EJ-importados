@@ -1,0 +1,140 @@
+/* Assinatura provisória até receber o arquivo original da marca */
+.brand-logo{display:block;line-height:0;flex-shrink:0}.brand-logo img{display:block;object-fit:contain}.brand-logo-header img{width:190px;height:62px}
+.brand-signature{display:flex;align-items:center;gap:11px;color:#fff;margin-bottom:20px}.brand-signature b{font:700 28px 'Playfair Display';color:#d2ad65;border-right:1px solid #6f6045;padding-right:12px}.brand-signature span{font:600 13px 'Playfair Display';letter-spacing:3px;color:#e7e8e9}.admin-brand{margin:0 3px 25px;padding-bottom:18px;border-bottom:1px solid #263747}.admin-brand .brand-signature{margin:0}.admin-brand small{display:block;font-size:8px;letter-spacing:1.6px;color:#82909c;margin:9px 0 0 50px}
+@media(max-width:800px){.brand-logo-header img{width:120px;height:52px}}
+
+/* Marca em baixo-relevo: aparece suavemente sem competir com o conteúdo */
+.footer{background-color:#091522;background-image:linear-gradient(90deg,rgba(9,21,34,.96) 0%,rgba(9,21,34,.82) 48%,rgba(9,21,34,.38) 100%),url('/images/marca-relevo-ej.png');background-position:center;background-size:cover;background-repeat:no-repeat}
+.footer-grid,.footer-bottom{position:relative;z-index:1}
+.admin-sidebar{background-color:#0b1726;background-image:linear-gradient(rgba(11,23,38,.74),rgba(11,23,38,.92)),url('/images/marca-relevo-ej.png');background-position:62% center;background-size:auto 100%;background-repeat:no-repeat}
+@media(max-width:800px){.footer{background-position:65% center}.admin-sidebar{background-size:cover}}
+
+/* Atendimento e compra direta pelo WhatsApp */
+.whatsapp-floating{position:fixed;right:22px;bottom:22px;z-index:50;display:flex;align-items:center;gap:9px;background:#20a861;color:#fff;padding:13px 18px;border-radius:30px;font-weight:700;font-size:12px;box-shadow:0 10px 28px rgba(13,117,64,.35);transition:.2s}.whatsapp-floating:hover{transform:translateY(-3px);background:#188f51}.whatsapp-floating svg{width:21px}.whatsapp-buy{background:#168c4c;margin-top:14px}.whatsapp-buy:hover{background:#10713d}
+@media(max-width:800px){.whatsapp-floating{right:14px;bottom:14px;width:54px;height:54px;padding:0;justify-content:center}.whatsapp-floating span{display:none}}
+
+/* Paleta premium EJ: marinho, champagne e branco quente */
+body{background:#faf9f6;color:#1c2530}
+.topbar{background:#050d16;color:#e8e1d5;border-bottom:1px solid rgba(198,161,91,.22)}
+.header{background:#081522;box-shadow:0 5px 22px rgba(4,13,22,.18)}
+.header-main{color:#f7f5f0}
+.header-main .brand-logo-header{background:#faf9f6;border-radius:8px;padding:1px 8px;box-shadow:0 3px 14px rgba(0,0,0,.18)}
+.header-actions small{color:#aab3bc}.header-actions svg{color:#d5b46e}
+.search{background:#f8f7f3;border-color:rgba(198,161,91,.38)}.search input{color:#17202b}.search button{color:#9c7739}
+.nav{background:#0d1d2d;border-top:1px solid rgba(198,161,91,.18);border-bottom:2px solid #b9914b;color:#e8ebee}
+.nav a:hover,.nav a.active{color:#e0bd75}.nav .sale{color:#e68779}
+.product-section,.order-summary,.shipping{background:#f1eee8}
+.product-card{background:#fffdf9;border-color:#e5dfd3}.product-image{background:#f0eee9}
+.primary-button,.add-button{background:#0b1c2d}.primary-button:hover,.add-button:hover{background:#173651}
+.section-title span,.catalog-hero span,.brand{color:#a07935}.price-row em{background:#f8e5e1;color:#b94f45}
+.catalog-page,.product-page,.cart-page,.checkout-page,.account-page{background:#faf9f6}
+.catalog-layout aside{border-color:#ddd5c8}.catalog-toolbar select,.variation button{background:#fffdf9}
+.footer{border-top:2px solid #b9914b}
+.admin-content{background:#f3f1ed}.admin-page{color:#1c2530}.admin-sidebar{border-right:1px solid rgba(198,161,91,.18)}
+.admin-cards article,.admin-panels article,.admin-table,.product-form section{background:#fffdf9;border-color:#e2ddd4}
+@media(max-width:800px){.header-main .brand-logo-header{padding:0 4px}.nav{border-bottom-width:1px}}
+
+/* Marca integrada ao cabeçalho escuro, sem caixa ou fundo branco */
+.header-main .brand-logo-header{display:none}
+.header-brand-dark{display:flex;align-items:center;gap:11px;flex-shrink:0;color:#fff}
+.header-emblem{display:block;width:54px;height:54px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(198,161,91,.55),0 0 18px rgba(198,161,91,.12)}
+.header-emblem img{width:72px;height:72px;max-width:none;object-fit:cover;transform:translate(-9px,-4px)}
+.header-brand-dark>b{font:600 13px 'Playfair Display';letter-spacing:2.6px;background:linear-gradient(90deg,#f2f2ef,#c7a35e);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+@media(max-width:800px){.header-brand-dark{margin-right:auto}.header-emblem{width:48px;height:48px}.header-emblem img{width:64px;height:64px;transform:translate(-8px,-3px)}.header-brand-dark>b{display:none}}
+
+.menu-button{color:#d7b36b}
+.menu-button svg{display:block;stroke:currentColor;stroke-width:2.2}
+.menu-button:hover{color:#f0d28e}
+
+/* Abertura cinematográfica do banner principal */
+.hero{isolation:isolate}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(105deg,transparent 35%,rgba(221,181,103,.18) 50%,transparent 63%);transform:translateX(-120%);animation:heroLight 1.8s .25s ease-out both}
+.hero>img{animation:heroProducts 1.7s cubic-bezier(.2,.75,.25,1) both;transform-origin:70% 55%}
+.hero-content{z-index:2}
+.hero-content h1,.hero-content p,.hero-content .primary-button{opacity:0;transform:translateY(24px);animation:heroText .72s cubic-bezier(.2,.8,.25,1) forwards}
+.hero-content h1{animation-delay:.72s}
+.hero-content p{animation-delay:1s}
+.hero-content .primary-button{animation-delay:1.24s}
+@keyframes heroProducts{0%{opacity:0;transform:scale(1.1) translateX(50px);filter:blur(7px) brightness(.45)}45%{opacity:1;filter:blur(1px) brightness(.8)}100%{opacity:1;transform:scale(1) translateX(0);filter:blur(0) brightness(1)}}
+@keyframes heroText{to{opacity:1;transform:translateY(0)}}
+@keyframes heroLight{0%{transform:translateX(-120%);opacity:0}35%{opacity:1}100%{transform:translateX(120%);opacity:0}}
+@media(prefers-reduced-motion:reduce){.hero::after,.hero>img,.hero-content h1,.hero-content p,.hero-content .primary-button{animation:none;opacity:1;transform:none;filter:none}}
+
+/* Entrada elegante em todas as páginas e áreas administrativas */
+main{animation:pageEntrance .58s cubic-bezier(.2,.78,.25,1) both}
+.catalog-hero .container,.product-detail,.cart-layout,.checkout-layout,.account-grid{animation:pageContent .72s .12s cubic-bezier(.2,.78,.25,1) both}
+.catalog-results .product-card{animation:cardEntrance .5s cubic-bezier(.2,.75,.25,1) both}
+.catalog-results .product-card:nth-child(2){animation-delay:.06s}.catalog-results .product-card:nth-child(3){animation-delay:.12s}.catalog-results .product-card:nth-child(4){animation-delay:.18s}.catalog-results .product-card:nth-child(5){animation-delay:.24s}.catalog-results .product-card:nth-child(6){animation-delay:.3s}
+.admin-page>header{animation:pageContent .55s .08s both}.admin-cards article,.admin-panels article,.admin-table{animation:cardEntrance .5s .16s both}
+@keyframes pageEntrance{0%{opacity:0;transform:translateY(10px);filter:blur(2px)}100%{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes pageContent{0%{opacity:0;transform:translateY(22px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes cardEntrance{0%{opacity:0;transform:translateY(18px) scale(.985)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){main,.catalog-hero .container,.product-detail,.cart-layout,.checkout-layout,.account-grid,.catalog-results .product-card,.admin-page>header,.admin-cards article,.admin-panels article,.admin-table{animation:none!important;opacity:1;transform:none;filter:none}}
+
+/* Banner cinematográfico exclusivo da página Eletrônicos */
+.tech-hero{height:360px;position:relative;isolation:isolate;overflow:hidden;background:#cbd5e2}
+.tech-hero::before{content:"";position:absolute;inset:0;z-index:-2;background-image:url('/images/hero-eletronicos.png');background-size:cover;background-position:center;animation:techProducts 1.5s cubic-bezier(.2,.78,.25,1) both}
+.tech-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(202,213,225,.97) 0%,rgba(202,213,225,.88) 34%,rgba(167,181,198,.18) 62%,rgba(120,137,157,.04) 100%)}
+.tech-hero .container span,.tech-hero .container h1,.tech-hero .container p{opacity:0;transform:translateY(18px);animation:heroText .6s forwards}.tech-hero .container span{animation-delay:.55s}.tech-hero .container h1{animation-delay:.72s}.tech-hero .container p{animation-delay:.9s}
+@keyframes techProducts{0%{opacity:0;transform:scale(1.09) translateX(60px);filter:blur(6px) brightness(.68)}100%{opacity:1;transform:scale(1) translateX(0);filter:blur(0) brightness(.87)}}
+@media(max-width:800px){.tech-hero{height:310px}.tech-hero::before{background-position:64% center}.tech-hero::after{background:linear-gradient(90deg,rgba(224,231,239,.97) 0%,rgba(224,231,239,.84) 52%,rgba(224,231,239,.12) 100%)}.tech-hero .container{max-width:75%;margin-left:12px}}
+@media(prefers-reduced-motion:reduce){.tech-hero::before,.tech-hero .container span,.tech-hero .container h1,.tech-hero .container p{animation:none;opacity:1;transform:none;filter:none}}
+
+/* Banner cinematográfico exclusivo da página Perfumaria */
+.perfume-hero{height:360px;position:relative;isolation:isolate;overflow:hidden;background:#160d10;color:#fff}
+.perfume-hero::before{content:"";position:absolute;inset:0;z-index:-2;background-image:url('/images/hero-perfumaria.png');background-size:cover;background-position:center;animation:perfumeProducts 1.55s cubic-bezier(.2,.78,.25,1) both}
+.perfume-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,8,11,.98) 0%,rgba(15,9,12,.89) 35%,rgba(23,11,15,.18) 64%,rgba(23,11,15,0) 100%)}
+.perfume-hero .container span{color:#d6ac63}.perfume-hero .container p{color:#ddd3d0}.perfume-hero .container span,.perfume-hero .container h1,.perfume-hero .container p{opacity:0;transform:translateY(18px);animation:heroText .6s forwards}.perfume-hero .container span{animation-delay:.55s}.perfume-hero .container h1{animation-delay:.72s}.perfume-hero .container p{animation-delay:.9s}
+@keyframes perfumeProducts{0%{opacity:0;transform:scale(1.1) translateX(55px);filter:blur(7px) brightness(.55)}100%{opacity:1;transform:scale(1) translateX(0);filter:blur(0) brightness(.9)}}
+@media(max-width:800px){.perfume-hero{height:310px}.perfume-hero::before{background-position:63% center}.perfume-hero::after{background:linear-gradient(90deg,rgba(12,8,11,.97) 0%,rgba(15,9,12,.82) 53%,rgba(23,11,15,.1) 100%)}.perfume-hero .container{max-width:76%;margin-left:12px}}
+@media(prefers-reduced-motion:reduce){.perfume-hero::before,.perfume-hero .container span,.perfume-hero .container h1,.perfume-hero .container p{animation:none;opacity:1;transform:none;filter:none}}
+
+/* Ajustes prioritários para celulares */
+html,body,#root{max-width:100%;overflow-x:hidden}
+@media(max-width:800px){
+ body{font-size:15px;-webkit-text-size-adjust:100%}
+ input,select,textarea{font-size:16px!important;max-width:100%}
+ button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+ .header{top:0}.header-main{padding:0;min-width:0}.header-actions{gap:12px}.header-actions svg{width:23px;height:23px}
+ .search{height:48px}.search input{min-width:0}.search button{min-width:48px}
+ .nav.open{max-height:calc(100vh - 120px);overflow-y:auto;box-shadow:0 16px 30px rgba(0,0,0,.25)}
+ .hero{height:500px}.hero-content{padding-top:80px;max-width:88%}.hero h1{font-size:36px}.hero p{font-size:15px}
+ .products-grid{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}.product-card{min-width:0}.product-image{height:180px}.product-info h3{height:36px;overflow:hidden}.add-button{font-size:11px;padding:11px 7px}
+ .catalog-layout,.product-detail,.cart-layout,.checkout-layout{width:100%;min-width:0}.catalog-toolbar{gap:10px}.catalog-toolbar select{width:135px;min-width:0}
+ .footer-grid{grid-template-columns:1fr;gap:25px}.footer-bottom{line-height:1.8}.footer-bottom span{display:block}
+ .buy-row .primary-button{min-height:50px}.order-summary{width:100%}
+ .admin-shell{display:block;min-width:0}.admin-sidebar{position:relative;height:auto;padding:14px 12px}.admin-brand{margin-bottom:10px;padding-bottom:10px}.admin-brand small,.admin-user{display:none}
+ .admin-sidebar nav{display:flex;flex-direction:row;overflow-x:auto;gap:7px;padding-bottom:5px;scrollbar-width:none}.admin-sidebar nav::-webkit-scrollbar{display:none}.admin-sidebar nav>small{display:none}.admin-sidebar nav a{flex:0 0 auto;white-space:nowrap;padding:9px 11px;background:rgba(255,255,255,.04)}
+ .admin-page{width:100%;padding:16px 12px}.admin-page>header{flex-direction:column}.admin-page>header .primary-button{width:100%}.admin-cards{grid-template-columns:1fr 1fr;gap:9px}.admin-cards article{padding:14px}.admin-cards strong{font-size:19px}
+ .admin-panels{grid-template-columns:1fr}.admin-table{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}.admin-table table{min-width:720px}.admin-filters{display:grid;grid-template-columns:1fr}.admin-filters input,.admin-filters select{width:100%}
+ .form-columns,.form-grid{grid-template-columns:1fr}.product-form section{padding:16px}.chart{gap:8px;padding:10px}
+}
+@media(max-width:380px){.products-grid{grid-template-columns:1fr}.product-image{height:260px}.admin-cards{grid-template-columns:1fr}.hero h1{font-size:32px}}
+
+/* Categorias sempre visíveis no celular */
+.mobile-home{display:none}
+@media(max-width:800px){.menu-button{display:none}.mobile-home{display:block}.header{padding-bottom:100px}.nav,.nav.open{display:block;position:absolute;top:114px;left:0;right:0;background:#0d1d2d;box-shadow:none;overflow:hidden}.nav .container{width:100%;height:42px;padding:0 12px;display:flex;flex-direction:row;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none}.nav .container::-webkit-scrollbar{display:none}.nav a{flex:0 0 auto;padding:7px 13px;border:1px solid rgba(198,161,91,.25);border-radius:18px;font-size:11px;background:rgba(255,255,255,.035)}.nav a.active{background:#c6a15b;color:#081522;border-color:#c6a15b}.nav .sale{color:#f0a095}}
+
+/* Refinamento premium da navegação mobile */
+@media(max-width:800px){.nav,.nav.open{background:rgba(10,25,40,.98);border-top:1px solid rgba(255,255,255,.055);border-bottom:1px solid rgba(198,161,91,.38);backdrop-filter:blur(14px)}.nav .container{height:46px;gap:25px;padding:0 18px;scroll-snap-type:x proximity}.nav a{position:relative;scroll-snap-align:start;padding:15px 0 13px;border:0;border-radius:0;background:transparent;color:#c7cdd3;font-size:11px;font-weight:600;letter-spacing:.25px}.nav a::after{content:"";position:absolute;left:50%;right:50%;bottom:5px;height:2px;border-radius:2px;background:#d2aa60;transition:.22s}.nav a.active{background:transparent;color:#fff}.nav a.active::after{left:0;right:0}.nav .sale{color:#e79a8e}.nav a:active{opacity:.72}}
+
+/* Nome da loja ao lado do emblema no celular */
+@media(max-width:800px){.header-brand-dark{gap:10px;min-width:0}.header-brand-dark>b{display:block;font-family:'Playfair Display',serif;font-size:13px;font-weight:600;line-height:1;letter-spacing:2.1px;white-space:nowrap;background:linear-gradient(100deg,#f7f4ed 8%,#d5d7d9 48%,#d4ab60 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 4px 18px rgba(212,171,96,.08)}.header-actions{margin-left:auto}}
+@media(max-width:380px){.header-brand-dark>b{font-size:11px;letter-spacing:1.5px}.header-emblem{width:43px;height:43px}}
+
+/* Banners cinematográficos: Acessórios, Cosméticos e Ofertas */
+.access-hero,.beauty-hero,.sale-hero{height:360px;position:relative;isolation:isolate;overflow:hidden;color:#fff}
+.access-hero::before,.beauty-hero::before,.sale-hero::before{content:"";position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center;animation:categoryProducts 1.55s cubic-bezier(.2,.78,.25,1) both}
+.access-hero::before{background-image:url('/images/hero-acessorios.png')}.beauty-hero::before{background-image:url('/images/hero-cosmeticos.png')}.sale-hero::before{background-image:url('/images/hero-ofertas.png')}
+.access-hero::after,.beauty-hero::after,.sale-hero::after{content:"";position:absolute;inset:0;z-index:-1}
+.access-hero::after{background:linear-gradient(90deg,rgba(25,25,24,.97) 0%,rgba(28,27,26,.88) 35%,rgba(28,27,26,.12) 65%,transparent 100%)}
+.beauty-hero{color:#322126}.beauty-hero::after{background:linear-gradient(90deg,rgba(234,202,191,.98) 0%,rgba(234,202,191,.9) 35%,rgba(234,202,191,.16) 64%,transparent 100%)}.beauty-hero .container p{color:#654b52}
+.sale-hero::after{background:linear-gradient(90deg,rgba(7,16,31,.98) 0%,rgba(7,16,31,.89) 35%,rgba(43,5,18,.12) 66%,transparent 100%)}
+.access-hero .container span,.beauty-hero .container span,.sale-hero .container span{color:#d3a95f}.access-hero .container p,.sale-hero .container p{color:#d5d8dd}
+.access-hero .container span,.access-hero .container h1,.access-hero .container p,.beauty-hero .container span,.beauty-hero .container h1,.beauty-hero .container p,.sale-hero .container span,.sale-hero .container h1,.sale-hero .container p{opacity:0;transform:translateY(18px);animation:heroText .6s forwards}
+.access-hero .container span,.beauty-hero .container span,.sale-hero .container span{animation-delay:.55s}.access-hero .container h1,.beauty-hero .container h1,.sale-hero .container h1{animation-delay:.72s}.access-hero .container p,.beauty-hero .container p,.sale-hero .container p{animation-delay:.9s}
+@keyframes categoryProducts{0%{opacity:0;transform:scale(1.1) translateX(55px);filter:blur(7px) brightness(.55)}100%{opacity:1;transform:scale(1) translateX(0);filter:blur(0) brightness(.9)}}
+@media(max-width:800px){.access-hero,.beauty-hero,.sale-hero{height:310px}.access-hero::before,.beauty-hero::before,.sale-hero::before{background-position:63% center}.access-hero .container,.beauty-hero .container,.sale-hero .container{max-width:76%;margin-left:12px}}
+@media(prefers-reduced-motion:reduce){.access-hero::before,.beauty-hero::before,.sale-hero::before,.access-hero .container span,.access-hero .container h1,.access-hero .container p,.beauty-hero .container span,.beauty-hero .container h1,.beauty-hero .container p,.sale-hero .container span,.sale-hero .container h1,.sale-hero .container p{animation:none;opacity:1;transform:none;filter:none}}
+
+.footer p{overflow-wrap:anywhere}.footer p svg{flex:0 0 auto}
